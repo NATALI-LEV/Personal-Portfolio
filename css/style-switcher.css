@@ -12,7 +12,7 @@
     transition: all 0.3s ease;
     transform: translateX(100%);
 }
-.style-switcher .open
+.style-switcher.open
 {
     transform: translateX(-25px);
 }
@@ -64,25 +64,24 @@
     height: 30px;
     width: 30px;
     border-radius: 50%;
-    border: 1px solid red;
 }
-.style-switcher .colors-1
+.style-switcher .color-1
 {
     background: #3709dce9;
 }
-.style-switcher .colors-2
+.style-switcher .color-2
 {
     background: #fa5b0f;
 }
-.style-switcher .colors-3
+.style-switcher .color-3
 {
     background: rgb(232, 30, 30);
 }
-.style-switcher .colors-4
+.style-switcher .color-4
 {
     background: #f021b2;
 }
-.style-switcher .colors-5
+.style-switcher .color-5
 {
     background: #0f7553e9;
 }
