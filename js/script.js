@@ -1,8 +1,9 @@
 /* === typing animation === */
 var typed = new Typed(".typing",{
-    strings:["Computer Science student", "backend developer" , "frontend developer", "Gamer"],
+    strings:["Computer Science student", "Gamer"],
     typeSpeed:100,
-    backSpeed:60,
+    backSpeed:100,
+    backDelay: 0,
     loop:true
 })
 /* === aside === */

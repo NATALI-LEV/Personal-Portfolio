@@ -191,6 +191,7 @@ u1
   font-size: 30px;
   letter-spacing: 5px;
   position: relative;
+  color: var(--text-black-900);
 }
 .aside .logo a span
 {
@@ -393,6 +394,9 @@ h3.my-profession
 {
   flex: 0 0 100%;
   max-width: 100%;
+  text-align: justify;
+  padding: 0 15px;
+  margin-bottom: 20px;
 }
 .about .about-content .about-text h3
 {
@@ -416,6 +420,9 @@ h3.my-profession
   flex: 0 0 60%;
   max-width: 60%;
   margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .about .about-content .personal-info .info-item
 {
@@ -429,6 +436,7 @@ h3.my-profession
   font-size: 16px;
   color: var(--text-black-900);
   border-bottom: 1px solid var(--bg-black-50);
+  padding: 10px 0;
 }
 .about .about-content .personal-info .info-item p span
 {
@@ -440,73 +448,58 @@ h3.my-profession
 }
 .about .about-content .personal-info .buttons
 {
-  margin-top: 30px;
+  margin-top: 5px;
 }
 .about .about-content .personal-info .buttons .btn
 {
-  margin-top: 10px;
+  margin-top: 5px;
 }
 .about .about-content .skills
 {
-  flex: 0 0 40%;
-  max-width: 40%;
-  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 5%;
+  padding: 20px; 
+  border-radius: 10px; 
+  border: 1px solid var(--bg-black-50);
+  box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+  color: var(--test-black-700);
+  background-color: var(--bg-black-100);
+}
+.about .about-content .skills .skill-item li {
+  margin-bottom: 5px; 
 }
 .about .about-content .skills .skill-item
 {
   flex: 0 0 100%;
   max-width: 100%;
+  margin-bottom: 15px;
+  margin-left: 0;
 }
-.about .about-content .skills .skill-item h5
+.about .about-content .skills h5
 {
   line-height: 40px;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 18px;
   color: var(--text-black-900);
   text-transform: capitalize;
-
+  margin-bottom: 10px;
 }
-.about .about-content .skills .skill-item .progress
+.about .about-content .education
 {
-  background-color: var(--bg-black-50);
-  height: 7px;
-  border-radius: 4px;
-  width: 100%;
-  position: relative;
+  flex: 0 0 60%;
+  max-width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0;
 }
-.about .about-content .skills .skill-item 
-{
-  margin-bottom: 25px;
-}
-.about .about-content .skills .skill-item .progress .progress-in
-{
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  border-radius: 4px;
-  background-color: var(--skin-color);
-}
-.about .about-content .skills .skill-item .skill-precent
-{
-  position: absolute;
-  right: 0;
+.about .about-content .education li {
   color: var(--text-black-900);
-  top: -40px;
-  font-weight: 400;
-  line-height: 40px;
-}
-.about .about-content .education,
-.about .about-content .experience
-{
-  flex: 0 0 50%;
-  max-width: 50%;
-  margin-top: 30px;
 }
 .about .about-content h3.title
 {
   font-size: 24px;
-  margin-bottom: 30px;
+  margin-bottom: 5px;
   font-weight: 700;
   color: var(--text-black-900);
 }
@@ -575,6 +568,7 @@ h3.my-profession
 }
 .about .about-content .timeline .timeline-text
 {
+  margin-top: -10px;
   line-height: 25px;
   font-size: 16px;
   text-align: justify;
@@ -725,6 +719,14 @@ h3.my-profession
   color: var(--text-black-900);
   font-weight: 400;
 }
+.contact .contact-info-item p a {
+  color: var(--test-black-700);
+  text-decoration: none;
+  font-weight: 400;
+}
+.contact .contact-info-item p a:hover {
+  text-decoration: underline;
+}
 .contact .contact-form
 {
   flex: 0 0 100%;
@@ -800,11 +802,6 @@ h3.my-profession
   {
     left: 270px;
   }
-  .about .about-content .personal-info .info-item p span
-  {
-    display: block;
-    margin-left: 0;
-  }
 }
 @media (max-width:1900px)
 {
@@ -831,7 +828,6 @@ h3.my-profession
   .contact .contact-info-item,
   .portfolio .portfolio-item,
   .service .service-item,
-  .about .about-content .experience,
   .about .about-content .education,
   .about .about-content .skills,
   .about .about-content .personal-info
@@ -839,4 +835,7 @@ h3.my-profession
     flex: 0 0 100%;
     max-width: 100%;
   }
+}
+.style-switcher .fa-spin {
+  animation: fa-spin 5s infinite linear;
 }
