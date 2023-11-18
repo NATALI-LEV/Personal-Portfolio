@@ -4,3 +4,5 @@
 
 Link:
 * https://natali-lev.github.io/Personal-Portfolio/
+
+![Screenshot](screenshots/main.png)
