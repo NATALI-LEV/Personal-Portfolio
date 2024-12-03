@@ -485,7 +485,7 @@ h3.my-profession
   text-transform: capitalize;
   margin-bottom: 10px;
 }
-.about .about-content .education
+.about .about-content .experience
 {
   flex: 0 0 60%;
   max-width: 60%;
@@ -493,7 +493,7 @@ h3.my-profession
   flex-wrap: wrap;
   margin-top: 0;
 }
-.about .about-content .education li {
+.about .about-content .experience li {
   color: var(--text-black-900);
 }
 .about .about-content h3.title
@@ -785,7 +785,7 @@ h3.my-profession
   .contact ,.contact-form .col-6,
   .contact .contact-info-item,
   .portfolio .portfolio-item,
-  .about .about-content .education,
+  .about .about-content .experience,
   .about .about-content .skills,
   .about .about-content .personal-info
   {
@@ -795,5 +795,61 @@ h3.my-profession
 }
 .style-switcher .fa-spin {
   animation: fa-spin 5s infinite linear;
+}
+
+
+/* Add spacing and fix the overlapping issue - new changes for the "about" page -> experience section*/
+.timeline-item {
+  position: relative;
+  padding-left: 40px; 
+  margin-bottom: 30px; 
+}
+
+.circle-dot {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #007bff;
+  border-radius: 50%;
+}
+
+.timeline-date {
+  font-size: 14px;
+  color: #666;
+}
+
+.timeline-title {
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+.timeline-item h5 {
+  font-size: 16px;
+  color: #333;
+  margin-top: 10px;
+}
+
+.timeline-item ul {
+  margin-top: 10px;
+  padding-left: 20px; 
+}
+
+.timeline-item ul li {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.timeline-item h5.skills {
+  font-size: 14px;
+  font-weight: normal;
+  color: #777;
+  margin-top: 10px;
+}
+
+.timeline-item h5.skills::before {
+  content: "Skills: ";
+  font-weight: bold;
 }
 
